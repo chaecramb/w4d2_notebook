@@ -1,4 +1,6 @@
 <% @notes.each do |note| %>
 <p>Title: <%= note.title %></p>
-<%= link_to('show note', note_path(note)) %>
+<%= link_to('show', note_path(note)) %>
+<%= button_to('delete', note_path(note), method: :delete, data:{confirm: 'Delete note?'}) %>
+<%= link_to('edit', edit_note_path(note)) %>
 <% end %>

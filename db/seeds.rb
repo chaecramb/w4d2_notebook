@@ -9,4 +9,5 @@
 Note.delete_all
 Note.create!(title: 'CodeClan W4D2 notes', note: 'Learned lots about Rails models and migrations. Made Quiditch app :).')
 Note.create!(title: 'To-do list', note: 'Buy potatoes, go snowboarding, build spaceship, land on mars.')
-Note.create!(title: 'Workout 27/10/15', note: 'Lots of push-ups, rows, pulldowns and shoulder presses')
+Note.create!(title: 'Workout 27/10/15', note: 'Lots of push-ups.')
+Note.create!(title: 'How to build a treehouse', note: 'Get sticks, climb up tree with sticks, build house in tree.')

@@ -1,0 +1,9 @@
+<%= form_for(@note) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, size: 42%>
+  <br>
+  <%= f.label :note %>
+  <%= f.text_area(:note, size: '40x10') %>
+  <br>
+  <%= f.submit('Save changes') %>
+<% end %>

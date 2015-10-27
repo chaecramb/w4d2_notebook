@@ -10,5 +10,12 @@
 
 <%= yield %>
 
+<nav>
+  <ul>
+    <li><%= link_to('Notes', notes_path) %></li>
+    <li><%= link_to('New note', new_note_path) %></li>
+  </ul>
+</nav>
+
 </body>
 </html>
