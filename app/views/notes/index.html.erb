@@ -1,0 +1,4 @@
+<% @notes.each do |note| %>
+<p>Title: <%= note.title %></p>
+<%= link_to('show note', note_path(note)) %>
+<% end %>
