@@ -7,15 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
-<nav>
-  <ul>
-    <li><%= link_to('Notes', notes_path) %></li>
-    <li><%= link_to('New note', new_note_path) %></li>
-  </ul>
-</nav>
-
+  <h1>Forevernote</h1>
+  <nav>
+    <ul>
+      <li><%= link_to('Notes', notes_path) %></li>
+      <li><%= link_to('New note', new_note_path) %></li>
+    </ul>
+  </nav>
+  <%= yield %>
 </body>
 </html>
