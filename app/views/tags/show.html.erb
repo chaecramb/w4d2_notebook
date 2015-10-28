@@ -1,0 +1,9 @@
+<div>
+  <p>Tag: <%= @tag.name %></p>
+  <p> Notes: </p>
+  <% @tag.notes.each do |note| %>
+  <p>
+    <%= link_to(note.title, note_path(note)) %>
+  </p>
+  <% end %>
+</div>

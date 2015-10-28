@@ -2,6 +2,11 @@
   <%= f.label :title %>
   <%= f.text_field :title, size: 42%>
   <br>
+  <%= fields_for @tag do |t| %> 
+  <%= t.label :name, 'Tags' %>
+  <%= t.text_field :name %> 
+  <% end %>
+  <br>
   <%= f.label :note %>
   <%= f.text_area(:note, size: '40x10') %>
   <br>

@@ -11,3 +11,18 @@ Note.create!(title: 'CodeClan W4D2 notes', note: 'Learned lots about Rails model
 Note.create!(title: 'To-do list', note: 'Buy potatoes, go snowboarding, build spaceship, land on mars.')
 Note.create!(title: 'Workout 27/10/15', note: 'Lots of push-ups.')
 Note.create!(title: 'How to build a treehouse', note: 'Get sticks, climb up tree with sticks, build house in tree.')
+
+Tag.delete_all
+code_clan = Tag.create!(name: 'CodeClan')
+ruby = Tag.create!(name: 'Ruby')
+programming = Tag.create!(name: 'Programming')
+to_do = Tag.create!(name: 'To-do')
+workout = Tag.create!(name: 'Workout')
+diy = Tag.create!(name: 'DIY')
+trees = Tag.create!(name: 'Trees')
+
+Note.first.tags << code_clan << ruby << programming
+Note.first(2).last.tags << to_do
+Note.first(3).last.tags << workout
+Note.last.tags << diy << trees
+

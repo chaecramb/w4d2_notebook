@@ -9,10 +9,13 @@ class NotesController < ApplicationController
 
   def new
     @note = Note.new
+    @tag = Tag.new
   end
 
   def create
-    Note.new(note_params).save
+    note = Note.new(note_params)
+    note.tags << Tag.create_if_unique(tag_params) unless tag_params[:name].empty?
+    note.save
     redirect_to(notes_path)
   end
 
@@ -33,6 +36,10 @@ class NotesController < ApplicationController
 
   def note_params
     params.require(:note).permit(:title, :note)
+  end
+
+  def tag_params
+    params.require(:tag).permit(:name)
   end
 
 end

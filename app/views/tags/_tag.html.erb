@@ -1,0 +1,5 @@
+<div>
+  <p><%= link_to(tag.name, tag_path(tag)) %></p>
+  <p><%= link_to('edit tag name', edit_tag_path(tag)) %></p>
+  <p><%= button_to('delete', tag_path(tag), method: :delete, data:{confirm: 'Delete tag?'}) %></p>
+</div>

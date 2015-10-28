@@ -1,0 +1,8 @@
+<h2>edit tag</h2>
+<div>
+<%= form_for(@tag) do |f| %>
+  <%= f.label :name, 'Tag:' %>
+  <%= f.text_field :name, size: 42%>
+  <%= f.submit('save changes') %>
+<% end %>
+</div>

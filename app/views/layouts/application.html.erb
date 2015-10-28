@@ -8,12 +8,7 @@
 </head>
 <body>
   <h1>Forevernote</h1>
-  <nav>
-    <ul>
-      <li><%= link_to('Notes', notes_path) %></li>
-      <li><%= link_to('New note', new_note_path) %></li>
-    </ul>
-  </nav>
+  <%= render partial: 'layouts/menu' %>
   <%= yield %>
 </body>
 </html>
