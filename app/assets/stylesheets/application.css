@@ -74,5 +74,15 @@
   padding: 20px;
  }
 
+ span {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  margin: 0;
+ }
+
+ .new_tag {
+  text-align: center;
+ }
+
 
 

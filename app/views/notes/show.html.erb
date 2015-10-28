@@ -2,7 +2,7 @@
   <p>Title: <%= @note.title %></p>
   <p> Tags: 
     <% @note.tags.each do |tag| %>
-    <%= link_to(tag.name, tag_path(tag)) %>
+    <span><%= link_to(tag.name, tag_path(tag)) %></span>
     <% end %>
   </p>
   <p>Note created: <%= @note.created_at %> </p>
