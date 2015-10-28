@@ -1,0 +1,6 @@
+<div>
+<p><%= note.title %></p>
+<%= link_to('show', note_path(note)) %>
+<%= button_to('delete', note_path(note), method: :delete, data:{confirm: 'Delete note?'}) %>
+<%= link_to('edit', edit_note_path(note)) %>
+</div>
